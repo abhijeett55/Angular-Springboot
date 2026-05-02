@@ -1,0 +1,30 @@
+<app-navigation></app-navigation>
+<div class="login-card">
+  <h2>Login</h2>
+  <p class="subtitle">Click to Login with</p>
+  
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <div *ngIf="error">Content to render when condition is true.</div>
+    
+    <label>Email</label>
+    <input 
+      type="email"
+      class="form-email" 
+      formControlName="email" 
+      placeholder="abc123@gmail.com" />
+    
+    <label>Password</label>
+    <input 
+      type="password" 
+      class="form-password" 
+      formControlName="password" 
+      placeholder="Password" />
+    
+    <button type="submit" class="login-btn">Login</button>
+  </form>
+
+  <div class="links">
+    <p>Need account? <a routerLink="/register">Register here</a></p>
+    <p>Need password reset? <a routerLink="/reset">Click here</a></p>
+  </div>
+</div>

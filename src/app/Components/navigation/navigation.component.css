@@ -1,0 +1,111 @@
+/* ========== Navigation Bar Styles ========== */
+
+/* Container for the nav – keep consistent with page max-width */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Navbar overall – soften the dark background and add rounded corners */
+.navbar {
+  border-radius: 20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s ease;
+}
+
+.navbar:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Navbar brand (if present) – adjust spacing */
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: -0.3px;
+}
+
+/* Navbar links – modern, rounded and less aggressive */
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  transition: all 0.2s ease;
+  border-radius: 40px;
+  padding: 0.5rem 1rem;
+  margin: 0 0.2rem;
+}
+
+/* Hover effect – light background with rounded pill */
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Active link styling – optional */
+.navbar-dark .navbar-nav .nav-link.active {
+  background-color: #2c7da0;
+  color: white;
+  font-weight: 500;
+}
+
+/* Logout link – matches others but can have subtle difference */
+.navbar-dark .navbar-nav .nav-link[style*="cursor: pointer"] {
+  cursor: pointer;
+}
+
+/* Align ml-auto properly – maintain spacing */
+.ml-auto {
+  margin-left: auto !important;
+}
+
+/* For home/guest view, left‑aligned links are fine */
+.navbar-nav.mr-auto {
+  margin-right: auto !important;
+}
+
+/* Toggler button (hamburger) – custom style for consistency */
+.navbar-toggler {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 0.4rem 0.6rem;
+  transition: all 0.2s;
+}
+
+.navbar-toggler:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .navbar {
+    border-radius: 16px;
+  }
+  .navbar-nav .nav-link {
+    text-align: center;
+    margin: 0.2rem 0;
+  }
+  .ml-auto, .mr-auto {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .navbar-collapse {
+    margin-top: 0.75rem;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 576px) {
+  .navbar {
+    border-radius: 12px;
+  }
+  .navbar-nav .nav-link {
+    padding: 0.4rem 0.75rem;
+  }
+}

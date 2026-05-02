@@ -1,0 +1,40 @@
+<app-navigation></app-navigation>
+<div class="register-card">
+  <h2>Register</h2>
+  <p class="subtitle">Create your account</p>
+  
+  <form [formGroup]="registerForm" (ngSubmit)="register()">
+    <label>Email</label>
+    <input 
+      class="form-email" 
+      type="email" 
+      formControlName="email" 
+      placeholder="abc123@gmail.com" />
+    
+    <label>Username</label>               
+    <input 
+      class="form-username" 
+      formControlName="username" 
+      placeholder="username" />
+    
+    <label>Password</label>
+    <input 
+      class="form-password" 
+      type="password" 
+      formControlName="password"
+      placeholder="Password" />
+    
+    <label>Age</label>
+    <input 
+      class="form-age" 
+      type="number" 
+      formControlName="age" 
+      placeholder="age" />
+    
+    <button type="submit" class="register-btn">Register</button>
+  </form>
+  
+  <div class="links">
+    <p>Already have an account? <a routerLink="/login">Login here</a></p>
+  </div>
+</div>

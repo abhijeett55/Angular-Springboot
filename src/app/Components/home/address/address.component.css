@@ -1,0 +1,145 @@
+/* ========== Address Form Styles ========== */
+
+/* Container spacing */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Form card styling – same as product card aesthetic */
+form {
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid #e9ecef;
+  transition: box-shadow 0.2s ease;
+}
+
+form:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Form group spacing */
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+/* Labels */
+.control-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #1e2a3e;
+  margin-bottom: 0.4rem;
+  display: inline-block;
+}
+
+/* Input fields */
+.form-control {
+  width: 100%;
+  padding: 0.6rem 0.85rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 12px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus {
+  border-color: #2c7da0;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(44, 125, 160, 0.25);
+}
+
+/* Remove spinner buttons from number inputs */
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Button – consistent with product card button */
+.btn-primary {
+  background-color: #2c7da0;
+  border: none;
+  padding: 0.6rem 1.8rem;
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1f5e7a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:active {
+  transform: translateY(1px);
+}
+
+/* Responsive adjustments for form width */
+@media (max-width: 768px) {
+  .offset-2 {
+    margin-left: 0;
+  }
+  .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .form-group .col-m-10 {
+    width: 100%;
+  }
+}
+
+/* Helper for smaller screens – keeps shadow and padding consistent */
+@media (max-width: 576px) {
+  form {
+    padding: 1rem !important;
+  }
+}
+
+/* Optional: class for offset columns if Bootstrap grid isn't fully loaded */
+.offset-2 {
+  margin-left: 16.666667%;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/* Override Bootstrap's default form-horizontal if needed */
+.form-horizontal .form-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.form-horizontal .control-label {
+  flex: 0 0 auto;
+  width: 100%;
+  text-align: left;
+  padding-right: 0;
+}
+
+.form-horizontal .col-m-10 {
+  flex: 1;
+  width: 100%;
+}
