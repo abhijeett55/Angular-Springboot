@@ -1,0 +1,14 @@
+<nav class="categories-nav">
+  <div class="nav-container">
+    <ul class="nav-list">
+      <li *ngFor="let cat of categories" class="nav-item">
+        <a 
+          [routerLink]="cat.link" 
+          class="nav-link"
+          (click)="onNavClick(cat)">
+          {{ cat.name }}
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

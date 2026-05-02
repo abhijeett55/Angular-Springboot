@@ -7,6 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
+import { FrontbarComponent } from './Components/frontbar/frontbar.component';
 import { NavigationComponent } from './Components/navigation/navigation.component';
 import { LoginComponent } from './Components/login/login.component';
 import { RegisterComponent } from './Components/register/register.component';
@@ -47,6 +48,7 @@ const appRoutes: Routes = [
     AddressComponent,
     AdminComponent,
     EditItemComponent,
+    FrontbarComponent,
     OrderItemComponent
   ],
   imports: [

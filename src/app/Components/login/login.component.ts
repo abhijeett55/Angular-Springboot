@@ -1,11 +1,14 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { ApiService } from 'src/app/Service/api.service';
 import { Router } from '@angular/router';
 import { FormGroup, UntypedFormBuilder, Validators } from '@angular/forms';
 import { Subscription } from 'rxjs';
+import { FrontbarComponent } from '../frontbar/frontbar.component';
 
 @Component({
   selector: 'app-login',
+  imports : [ CommonModule, FrontbarComponent],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
