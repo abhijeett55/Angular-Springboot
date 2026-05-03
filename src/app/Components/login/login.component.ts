@@ -5,10 +5,11 @@ import { Router } from '@angular/router';
 import { FormGroup, UntypedFormBuilder, Validators } from '@angular/forms';
 import { Subscription } from 'rxjs';
 import { FrontbarComponent } from '../frontbar/frontbar.component';
+import { HeaderComponent } from '../header/header.component';
 
 @Component({
   selector: 'app-login',
-  imports : [ CommonModule, FrontbarComponent],
+  imports : [ CommonModule, FrontbarComponent, HeaderComponent],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })

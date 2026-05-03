@@ -7,6 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './Components/header/header.component';
 import { FrontbarComponent } from './Components/frontbar/frontbar.component';
 import { NavigationComponent } from './Components/navigation/navigation.component';
 import { LoginComponent } from './Components/login/login.component';
@@ -49,7 +50,8 @@ const appRoutes: Routes = [
     AdminComponent,
     EditItemComponent,
     FrontbarComponent,
-    OrderItemComponent
+    OrderItemComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
