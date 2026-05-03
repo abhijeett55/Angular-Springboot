@@ -1,0 +1,48 @@
+<!-- header.component.html -->
+<header class="amazon-header">
+  <div class="nav-left">
+    <a class="logo" routerLink="/">amazon.in</a>
+    <div class="delivery">
+      <span class="delivery-label">Delivery to</span>
+      <strong>{{ locationText }}</strong>
+      <a href="#" 
+      class="update-link" 
+      (click)="updateLocation(); 
+      $event.preventDefault()"
+      >Update location</a>
+    </div>
+  </div>
+
+  <!-- Search bar -->
+  <div class="nav-search">
+    <div class="search-dropdown">
+      <button class="dropdown-btn">All ▼</button>
+    </div>
+    <input type="text" class="search-input" placeholder="Search Amazon.in">
+    <button class="search-icon">🔍</button>
+  </div>
+
+  <!-- Right section: Language, Account, Orders, Cart -->
+  <div class="nav-right">
+    <div class="language">
+      <span class="lang-flag">🇮🇳</span>
+      <span class="lang-code">EN ▼</span>
+    </div>
+    <div class="account">
+      <span class="greeting">Hello, sign in</span>
+      <strong>Account & Lists ▼</strong>
+    </div>
+    <div class="orders">
+      <span class="returns">Returns</span>
+      <strong>& Orders</strong>
+    </div>
+    <div class="cart">
+      🛒 <strong>Cart</strong>
+    </div>
+  </div>
+</header>
+
+<!-- Image / banner section (as per your requirement) -->
+<div class="container head-title">
+  <img src="assets/banner.jpg" alt="Hero image" class="hero-image">
+</div>

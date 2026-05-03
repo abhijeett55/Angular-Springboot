@@ -1,0 +1,148 @@
+/* header.component.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.amazon-header {
+  background-color: #131921;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0.6rem 1.5rem;
+  font-family: 'Amazon Ember', 'Segoe UI', Arial, sans-serif;
+  color: white;
+}
+
+/* Left section */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ff9900;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+.logo:hover {
+  color: #ffb347;
+}
+
+.delivery {
+  font-size: 0.75rem;
+  line-height: 1.2;
+}
+.delivery-label {
+  color: #ccc;
+  display: block;
+}
+.update-link {
+  color: #ff9900;
+  text-decoration: none;
+  font-size: 0.7rem;
+  display: block;
+}
+.update-link:hover {
+  text-decoration: underline;
+}
+
+/* Search section */
+.nav-search {
+  flex: 1;
+  max-width: 700px;
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+}
+.search-dropdown {
+  background: #f3f3f3;
+  border-right: 1px solid #ccc;
+}
+.dropdown-btn {
+  background: #f3f3f3;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.search-input {
+  flex: 1;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  outline: none;
+}
+.search-icon {
+  background: #febd69;
+  border: none;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.search-icon:hover {
+  background: #f3a847;
+}
+
+/* Right section */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.language, .account, .orders, .cart {
+  cursor: pointer;
+}
+.language {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+.greeting, .returns {
+  font-size: 0.7rem;
+  color: #ccc;
+}
+.account strong, .orders strong, .cart strong {
+  font-size: 0.85rem;
+  display: block;
+}
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 1.2rem;
+}
+
+/* Image part */
+.container.head-title {
+  width: 100%;
+  text-align: center;
+  background: #eaeded;
+  padding: 0.5rem 0;
+}
+.hero-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .amazon-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .nav-search {
+    max-width: 100%;
+  }
+  .nav-right {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
