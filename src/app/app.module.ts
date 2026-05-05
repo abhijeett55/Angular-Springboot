@@ -7,6 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
+import { SearchDropdownComponent } from './Components/search-dropdown/search-dropdown.component';
 import { HeaderComponent } from './Components/header/header.component';
 import { FrontbarComponent } from './Components/frontbar/frontbar.component';
 import { NavigationComponent } from './Components/navigation/navigation.component';
@@ -39,7 +40,6 @@ const appRoutes: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent,
     NavigationComponent,
     LoginComponent,
     RegisterComponent,
@@ -49,9 +49,11 @@ const appRoutes: Routes = [
     AddressComponent,
     AdminComponent,
     EditItemComponent,
-    FrontbarComponent,
     OrderItemComponent,
-    HeaderComponent
+    HeaderComponent,
+    AppComponent,
+    SearchDropdownComponent,
+    FrontbarComponent
   ],
   imports: [
     BrowserModule,

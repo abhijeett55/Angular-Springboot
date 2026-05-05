@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { SearchDropdownComponent } from '../search-dropdown/search-dropdown.component';
 
 @Component({
   selector: 'app-header',
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, SearchDropdownComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })

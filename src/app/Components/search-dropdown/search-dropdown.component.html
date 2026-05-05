@@ -1,0 +1,11 @@
+<div class="search-dropdown" (click)="$event.stopPropagation()">
+  <button type="button" class="dropdown-btn" (click)="toggleDropdown()">
+    {{ selectedOption }} ▼
+  </button>
+  
+  <ul class="dropdown-menu" *ngIf="dropdownOpen">
+    <li *ngFor="let option of options" (click)="selectOption(option)">
+      {{ option }}
+    </li>
+  </ul>
+</div>
